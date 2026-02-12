@@ -1,0 +1,172 @@
+:root {
+  /* Colors */
+  --white: #fff;
+  --black: #000;
+  --blue-950: #0d192c;
+  --blue-900: #15263f;
+  --blue-800: #2e405a;
+  --blue-500: #8bacd9;
+  --cyan-400: #00fff8;
+
+  /* Typography - Font Family */
+  --font-family: "Outfit", sans-serif;
+
+  /* Text Presets */
+  /* Weight Size/Line-Height Family */
+  --tp-1: 600 2.2rem/1.25 var(--font-family);
+  --tp-2: 300 1.8rem/1.45 var(--font-family);
+  --tp-3sb: 600 1.6rem/1.25 var(--font-family);
+  --tp-3r: 400 1.6rem/1.25 var(--font-family);
+
+  /* Spacing */
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-100: 0.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--blue-950);
+  color: var(--blue-500);
+  height: 100vh;
+  padding: 0 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 35rem;
+  background-color: var(--blue-900);
+  border-radius: 1.5rem;
+  padding: var(--spacing-300);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 248, 0.5);
+
+  background-image: url("images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-img-link {
+  position: relative;
+  display: block;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.card-img-link:hover .img-overlay {
+  opacity: 1;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-title-link {
+  color: var(--white);
+  font: var(--tp-1);
+  display: block;
+  margin-bottom: var(--spacing-200);
+}
+
+.card-title-link:hover {
+  color: var(--cyan-400);
+}
+
+.card-text {
+  font: var(--tp-2);
+  margin-bottom: var(--spacing-300);
+}
+
+.nft-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid var(--blue-800);
+  padding-bottom: var(--spacing-300);
+}
+
+.nft-price-container,
+.nft-time-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-100);
+}
+
+.nft-price-icon,
+.nft-time-icon {
+  width: auto;
+  height: auto;
+}
+
+.nft-price-text {
+  color: var(--cyan-400);
+  font: var(--tp-3sb);
+}
+
+.nft-time-text {
+  font: var(--tp-3r);
+}
+
+.card-creator-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.card-creator-img {
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--white);
+}
+
+.card-creator-text {
+  font: var(--tp-3r);
+}
+
+.card-creator-name {
+  color: var(--white);
+}
+
+.card-creator-name:hover {
+  color: var(--cyan-400);
+}
