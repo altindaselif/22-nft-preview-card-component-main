@@ -10,8 +10,8 @@ This is an NFT Preview Card Component that you can use on your websites.
 
 ## Links
 
-- **GitHub Repository:** [View Code](https://github.com/altindaselif/newsletter-sign-up-with-success-message-main)
-- **Live Demo:** [View Live Site](https://altindaselif.github.io/newsletter-sign-up-with-success-message-main/)
+- **GitHub Repository:** [View Code](https://github.com/altindaselif/22-nft-preview-card-component-main)
+- **Live Demo:** [View Live Site](https://altindaselif.github.io/22-nft-preview-card-component-main/)
 
 ## Built With
 
